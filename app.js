@@ -34,7 +34,7 @@ document.getElementById('deliveryForm').addEventListener('submit', (e) => {
     // 結果を表示
     document.getElementById('results').innerHTML = `
     <h3>分析情報</h3>
-    <hr>
+
     <div class="company-section">
     <h4>基本情報</h4>
     <p>売上: <span class="result-value">${formatDecimal(totalUberSales)}</span>　円</p>
@@ -46,7 +46,7 @@ document.getElementById('deliveryForm').addEventListener('submit', (e) => {
     <p>チップ: <span class="result-value">${formatDecimal(uberTip)}</span>　円</p>
 
     <h4>効率</h4>
-    <p>売上: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
+    <p>時給: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
     <p>単価: <span class="result-value">${formatDecimal(uberSalesPerDelivery)}</span>　円/件</p>
     <p>ペース: <span class="result-value">${formatDecimal(uberDeliveriesPerHour)}</span>　件/時</p>
     </div>

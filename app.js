@@ -33,39 +33,22 @@ document.getElementById('deliveryForm').addEventListener('submit', (e) => {
 
     // 結果を表示
     document.getElementById('results').innerHTML = `
-    <h3>基本情報</h3>
-    <p>稼働時間: <span class="result-value">${formatDecimal(workHours)}</span>　時間</p>
-    <p>配達件数: <span class="result-value">${totalDeliveries}</span>　件</p>
-    <p>総売上: <span class="result-value">${formatDecimal(totalSales)}</span>　円</p>
-
-    <h3>収益内訳</h3>
-    <p>配達報酬: <span class="result-value">${formatDecimal(uberBaseReward)}</span>　円</p>
-    <p>プロモ: <span class="result-value">${formatDecimal(uberPromotion)}</span>　円</p>
-    <p>チップ: <span class="result-value">${formatDecimal(uberTip)}</span>　円</p>
-
-    <h3>配達効率</h3>
-    <p>時給（総売上）: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
-    <p>時給（配達報酬のみ）: <span class="result-value">${formatDecimal(uberRewardPerHour)}</span>　円/時</p>
-    <p>配達単価: <span class="result-value">${formatDecimal((totalSales / totalDeliveries) || 0)}</span>　円/件</p>
-    <p>配達ペース: <span class="result-value">${formatDecimal(uberDeliveriesPerHour)}</span>　件/時</p>
-
+    <h3>分析情報</h3>
     <hr>
-    <h3>各社詳細
-
     <div class="company-section">
-    <h4>Uber基本情報</h4>
+    <h4>基本情報</h4>
     <p>売上: <span class="result-value">${formatDecimal(totalUberSales)}</span>　円</p>
     <p>件数: <span class="result-value">${uberDeliveries}</span>　件</p>
 
-    <h4>Uber内訳</h4>
-    <p>報酬: <span class="result-value">${formatDecimal(uberBaseReward)}</span>　円</p>
-    <p>プロモ: <span class="result-value">${formatDecimal(uberPromotion)}</span>　円</p>
+    <h4>報酬内訳</h4>
+    <p>正味の料金: <span class="result-value">${formatDecimal(uberBaseReward)}</span>　円</p>
+    <p>プロモーション: <span class="result-value">${formatDecimal(uberPromotion)}</span>　円</p>
     <p>チップ: <span class="result-value">${formatDecimal(uberTip)}</span>　円</p>
 
-    <h4>Uber効率</h4>
-    <p>時給（売上）: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
-    <p>時給（配達報酬）: <span class="result-value">${formatDecimal(uberRewardPerHour)}</span>　円/時</p>
-    <p>配達単価: <span class="result-value">${formatDecimal(uberSalesPerDelivery)}</span>　円/件</p>
+    <h4>効率</h4>
+    <p>時給（正味＋プロモ＋チップ）: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
+    <p>時給（正味の料金のみ）: <span class="result-value">${formatDecimal(uberRewardPerHour)}</span>　円/時</p>
+    <p>配達単価（売上全体）: <span class="result-value">${formatDecimal(uberSalesPerDelivery)}</span>　円/件</p>
     <p>配達ペース: <span class="result-value">${formatDecimal(uberDeliveriesPerHour)}</span>　件/時</p>
     </div>
     `;

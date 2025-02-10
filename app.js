@@ -45,9 +45,11 @@ document.getElementById('deliveryForm').addEventListener('submit', (e) => {
     <p>プロモーション: <span class="result-value">${formatDecimal(uberPromotion)}</span>　円</p>
     <p>チップ: <span class="result-value">${formatDecimal(uberTip)}</span>　円</p>
 
-    <h4>効率</h4>
-    <p>時給（正味＋プロモ＋チップ）: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
-    <p>時給（正味の料金のみ）: <span class="result-value">${formatDecimal(uberRewardPerHour)}</span>　円/時</p>
+    <h4>時給</h4>
+    <p>正味＋プロモ＋チップ: <span class="result-value">${formatDecimal(uberSalesPerHour)}</span>　円/時</p>
+    <p>正味の料金のみ: <span class="result-value">${formatDecimal(uberRewardPerHour)}</span>　円/時</p>
+
+    <h4>単価・ペース</h4>
     <p>配達単価（売上全体）: <span class="result-value">${formatDecimal(uberSalesPerDelivery)}</span>　円/件</p>
     <p>配達ペース: <span class="result-value">${formatDecimal(uberDeliveriesPerHour)}</span>　件/時</p>
     </div>

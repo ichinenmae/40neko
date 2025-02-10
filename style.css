@@ -1,0 +1,151 @@
+/* グローバルリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    color: #545454;
+    line-height: 1.5;
+}
+
+/* タイトル画像のスタイル */
+.title-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* フォーム設定 */
+form {
+    background-color: #545454;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+}
+
+input {
+    text-align: right;
+}
+
+button {
+    width: 60%; /* 親要素の80%の横幅 */
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4caf50; /* 緑色 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 auto; /* 横中央揃え */
+    display: block; /* ブロック要素として扱う */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-section {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* 結果表示設定 */
+#results {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-size: 1em; /* 全体のフォントサイズを基本値に */
+    color: #545454; /* 全体の文字色を統一 */
+
+}
+
+#results p {
+    text-align: right;
+    font-size: 1em; /* 結果の各行を統一 */
+    line-height: 1.5;
+}
+
+.result-value {
+    font-weight: bold;
+    font-size: 1.25em; /* 結果の強調表示 */
+}
+
+h3, h4 {
+    font-size: 1em; /* 見出しのサイズを統一 */
+    font-weight: bold;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* 各社セクション */
+.company-section {
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f5f5f5;
+    font-size: 1em; /* 他と統一 */
+    font-weight: normal; /* 太字を解除 */
+    color: inherit; /* 色を継承 */
+}
+
+.company-section h4 {
+    font-size: 1em; /* 各社セクションの見出しも統一 */
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.integer-part {
+    font-weight: bold;
+}
+
+.decimal-part {
+    font-size: 0.75em;
+    font-weight: normal;
+    color: #919191;
+}
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input, button {
+        width: calc(100% - 10px);
+    }
+}

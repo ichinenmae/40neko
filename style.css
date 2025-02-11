@@ -117,7 +117,7 @@ h3, h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(245, 245, 245, 0.5); /* 透過率50%の背景色 */
+    background-color: rgba(245, 245, 245); 
     font-size: 1em; /* 他と統一 */
     font-weight: normal; /* 太字を解除 */
     color: inherit; /* 色を継承 */

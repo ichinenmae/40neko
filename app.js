@@ -39,6 +39,7 @@ document.getElementById('deliveryForm').addEventListener('submit', (e) => {
     <h4>基本情報</h4>
     <p>売上: <span class="result-value">${formatDecimal(totalUberSales)}</span>　円</p>
     <p>件数: <span class="result-value">${uberDeliveries}</span>　件</p>
+    <p>オンライン時間: <span class="result-value">${formatDecimal(workHours)}</span>　時間</p>
 
     <h4>報酬内訳</h4>
     <p>正味の料金: <span class="result-value">${formatDecimal(uberBaseReward)}</span>　円</p>

@@ -14,28 +14,27 @@
     
         <!-- 時間の入力フォーム -->
         <div class="form-section">
-		<label for="workTime">オンライン時間</label>
-		<div>
-    			<input type="number" id="workHours" placeholder="時間" min="0">
-			<input type="number" id="workMinutes" placeholder="分" min="0" max="59">
-		</div>
+		<h3>オンライン時間</h3>
+		<label for="workHours">時間</label>
+    		<input type="number" id="workHours" placeholder="時間" min="0">
+		<label for="workMinutes">分</label>
+		<input type="number" id="workMinutes" placeholder="分" min="0" max="59">
 	</div>
 
         <!-- Uber セクション -->
-
         <div class="form-section">
-        <h3>Uber</h3>
-        <label for="uberDeliveries">乗車</label>
-        <input type="number" id="uberDeliveries" >
-        <label for="uberBaseReward">正味の料金</label>
-        <input type="number" id="uberBaseReward" >
-        <label for="uberPromotion">プロモーション</label>
-        <input type="number" id="uberPromotion" >
-        <label for="uberTip">チップ</label>
-        <input type="number" id="uberTip" >
-		</div>
+	        <h3>Uber</h3>
+		<label for="uberDeliveries">乗車</label>
+		<input type="number" id="uberDeliveries" >
+		<label for="uberBaseReward">正味の料金</label>
+		<input type="number" id="uberBaseReward" >
+		<label for="uberPromotion">プロモーション</label>
+		<input type="number" id="uberPromotion" >
+		<label for="uberTip">チップ</label>
+		<input type="number" id="uberTip" >
+	</div>
 
-<button type="submit">計算</button>
+	<button type="submit">計算</button>
     </form>
     <div id="results"></div>
     <script src="app.js"></script>

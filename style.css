@@ -117,7 +117,7 @@ h3, h4 {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-color: rgba(245, 245, 245); 
+    background-color: rgb(245, 245, 245); 
     font-size: 1em; /* 他と統一 */
     font-weight: normal; /* 太字を解除 */
     color: inherit; /* 色を継承 */
@@ -136,7 +136,6 @@ h3, h4 {
 .decimal-part {
     font-size: 0.75em;
     font-weight: normal;
-    color: #919191;
 }
 
 /* メディアクエリ */
